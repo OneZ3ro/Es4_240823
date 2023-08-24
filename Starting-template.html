@@ -144,8 +144,8 @@
     </header>
 
     <main role="main">
-      <section class="jumbotron text-center">
-        <div class="container">
+      <section class="py-5 text-center">
+        <div id="container" class="container">
           <h1 class="jumbotron-heading">Album API example</h1>
           <p class="lead text-muted">
             This page will dynamically load pictures from the web, and display
@@ -159,6 +159,23 @@
               >Load Secondary Images</a
             >
           </p>
+          <form onsubmit="userSearch(event)" class="input-group mb-3">
+            <input
+              id="cerca"
+              type="text"
+              class="form-control"
+              placeholder="Search..."
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+            <button
+              type="submit"
+              class="btn input-group-text"
+              id="basic-addon1"
+            >
+              Search
+            </button>
+          </form>
         </div>
       </section>
 
